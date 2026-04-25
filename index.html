@@ -1,209 +1,325 @@
 <!DOCTYPE html>
-        <html>
-        <head>
-            <meta charset="UTF-8">
-            <title>&ast;&ast;Wahyu Nur Alan&ast;&ast;</title>
-            <style>
-/* From extension vscode.github */
-/*---------------------------------------------------------------------------------------------
- *  Copyright (c) Microsoft Corporation. All rights reserved.
- *  Licensed under the MIT License. See License.txt in the project root for license information.
- *--------------------------------------------------------------------------------------------*/
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wahyu Nur Alan | Senior Backend Developer</title>
+    <meta name="description" content="Portfolio of Wahyu Nur Alan — Senior Backend Developer with 10+ years of experience building scalable microservices and high-performance APIs using Node.js, Golang, and cloud-native technologies.">
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
 
-.vscode-dark img[src$=\#gh-light-mode-only],
-.vscode-light img[src$=\#gh-dark-mode-only],
-.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
-.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
-	display: none;
-}
+    <!-- =================== NAVBAR =================== -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#" class="nav-brand">Wahyu Nur Alan</a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#hero" class="active">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="mailto:wahyunuralan@gmail.com" class="nav-cta">Contact Me</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle" onclick="toggleNav()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-</style>
-            
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
-<style>
-            body {
-                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
-                font-size: 14px;
-                line-height: 1.6;
+    <!-- =================== HERO SECTION =================== -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <p class="hero-greeting">Hello There</p>
+                <h1 class="hero-name">I am <span>Wahyu Nur Alan</span></h1>
+                <p class="hero-role">Senior Backend Developer</p>
+                <p class="hero-desc">
+                    Building scalable microservices and high-performance APIs for 10+ years. 
+                    Specialized in Node.js, Golang, and cloud-native architectures — handling 
+                    up to 150,000 concurrent users per minute.
+                </p>
+                <div class="hero-buttons">
+                    <a href="mailto:wahyunuralan@gmail.com" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i> Get In Touch
+                    </a>
+                    <a href="#experience" class="btn btn-outline">
+                        View Experience
+                    </a>
+                </div>
+                <div class="hero-social">
+                    <span>Find Me On</span>
+                    <a href="https://linkedin.com/in/nuralan" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:wahyunuralan@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-decoration">
+                    <div class="circle circle-1"></div>
+                    <div class="circle circle-2"></div>
+                    <div class="circle circle-3"></div>
+                    <div class="dot dot-1"></div>
+                    <div class="dot dot-2"></div>
+                    <div class="dot dot-3"></div>
+                    <i class="fas fa-terminal code-icon"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================== SERVICES / WHAT I OFFER =================== -->
+    <section id="services">
+        <div class="container">
+            <p class="section-label">What I Offer</p>
+            <h2 class="section-title">Professional Backend Solutions<br>Tailored To Your Needs</h2>
+            <div class="section-divider"></div>
+
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-server"></i></div>
+                    <h3>API Development</h3>
+                    <p>Designing and building RESTful APIs with Node.js and Golang that are scalable, well-documented, and production-ready.</p>
+                </div>
+                <div class="service-card active reveal">
+                    <div class="service-icon"><i class="fas fa-cubes"></i></div>
+                    <h3>Microservices Architecture</h3>
+                    <p>Architecting event-driven microservices using Kafka, Redis, and Docker for distributed, high-availability systems.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-database"></i></div>
+                    <h3>Database Engineering</h3>
+                    <p>Optimizing database performance across PostgreSQL, MySQL, and MongoDB with advanced tuning and query optimization.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================== STATS =================== -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="reveal">
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label">Years of Experience</div>
+                </div>
+                <div class="reveal">
+                    <div class="stat-number">150K</div>
+                    <div class="stat-label">CCU Handling</div>
+                </div>
+                <div class="reveal">
+                    <div class="stat-number">12+</div>
+                    <div class="stat-label">Projects Delivered</div>
+                </div>
+                <div class="reveal">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">Companies</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================== EXPERIENCE / LATEST PROJECTS =================== -->
+    <section id="experience">
+        <div class="container">
+            <p class="section-label">Career Timeline</p>
+            <h2 class="section-title">Work Experience</h2>
+            <div class="section-divider"></div>
+
+            <div class="project-list">
+                <!-- Metadata Informasi Teknologi -->
+                <div class="project-card reveal">
+                    <div class="project-icon"><i class="fas fa-leaf"></i></div>
+                    <div class="project-info">
+                        <h3>Backend Developer — Metadata Informasi Teknologi</h3>
+                        <p>Focused on backend development for the Decision Support System (DSS) at Kementerian Lingkungan Hidup. Built APIs for environmental data analysis and reporting modules for ministry stakeholders.</p>
+                        <div class="project-tags">
+                            <span class="tag">Backend</span>
+                            <span class="tag">DSS</span>
+                            <span class="tag">REST API</span>
+                            <span class="tag">Government</span>
+                        </div>
+                    </div>
+                    <div class="project-date">Nov 2025 – Jan 2026</div>
+                </div>
+
+                <!-- Skyrain Studio -->
+                <div class="project-card reveal">
+                    <div class="project-icon"><i class="fas fa-cloud"></i></div>
+                    <div class="project-info">
+                        <h3>Backend Developer — Skyrain Studio</h3>
+                        <p>Leading backend development for high-traffic applications. Pijar Sekolah (150K CCU/min), Tepibojonegoro.com (Golang), and FINNET Payment Gateway.</p>
+                        <div class="project-tags">
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Golang</span>
+                            <span class="tag">Kafka</span>
+                            <span class="tag">Redis</span>
+                            <span class="tag">Microservices</span>
+                        </div>
+                    </div>
+                    <div class="project-date">2020 – Present</div>
+                </div>
+
+                <!-- Synergics -->
+                <div class="project-card reveal">
+                    <div class="project-icon"><i class="fas fa-shield-alt"></i></div>
+                    <div class="project-info">
+                        <h3>Backend Developer — Synergics Digital Solusindo</h3>
+                        <p>Developed governmental and security enterprise systems including SI PUSLABFOR (Laravel & Vue.js), SAKTI, and Crime Alarm & Police Monitoring systems.</p>
+                        <div class="project-tags">
+                            <span class="tag">Laravel</span>
+                            <span class="tag">PHP</span>
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">MySQL</span>
+                        </div>
+                    </div>
+                    <div class="project-date">2016 – 2020</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================== WHY HIRE ME =================== -->
+    <section id="why-me" style="background: var(--bg-white);">
+        <div class="container">
+            <p class="section-label">Why Choose Me</p>
+            <h2 class="section-title">What Makes Me Different</h2>
+            <div class="section-divider"></div>
+
+            <div class="traits-grid">
+                <div class="trait-item reveal">
+                    <div class="trait-icon"><i class="fas fa-bolt"></i></div>
+                    <h4>High Performance</h4>
+                    <p>Battle-tested in handling 150K concurrent users per minute on production systems.</p>
+                </div>
+                <div class="trait-item reveal">
+                    <div class="trait-icon"><i class="fas fa-handshake"></i></div>
+                    <h4>Collaborative</h4>
+                    <p>Led teams of 4–7 developers and coordinated with DevOps and third-party integrations.</p>
+                </div>
+                <div class="trait-item reveal">
+                    <div class="trait-icon"><i class="fas fa-chart-line"></i></div>
+                    <h4>Scalable Design</h4>
+                    <p>Expert in microservices and event-driven architecture built for growth.</p>
+                </div>
+                <div class="trait-item reveal">
+                    <div class="trait-icon"><i class="fas fa-code"></i></div>
+                    <h4>Versatile</h4>
+                    <p>Proficient in multiple languages and frameworks — from Node.js to Golang, Laravel to Fiber.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================== TOOLS & SKILLS =================== -->
+    <section id="skills">
+        <div class="container">
+            <p class="section-label">Tech Stack</p>
+            <h2 class="section-title">Tools & Skills</h2>
+            <div class="section-divider"></div>
+
+            <div class="tools-grid">
+                <div class="tool-item reveal" title="Golang"><i class="fab fa-golang"></i></div>
+                <div class="tool-item reveal" title="Node.js"><i class="fab fa-node-js"></i></div>
+                <div class="tool-item reveal" title="PHP"><i class="fab fa-php"></i></div>
+                <div class="tool-item reveal" title="JavaScript"><i class="fab fa-js-square"></i></div>
+                <div class="tool-item reveal" title="Docker"><i class="fab fa-docker"></i></div>
+                <div class="tool-item reveal" title="Linux"><i class="fab fa-linux"></i></div>
+                <div class="tool-item reveal" title="Git"><i class="fab fa-git-alt"></i></div>
+                <div class="tool-item reveal" title="Database"><i class="fas fa-database"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================== FOOTER =================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Wahyu Nur Alan</h3>
+                    <p>Senior Backend Developer based in Bojonegoro, Indonesia. Passionate about building robust, scalable, and high-performance backend systems.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="#hero">Home</a>
+                    <a href="#services">Services</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#skills">Skills</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact</h4>
+                    <a href="mailto:wahyunuralan@gmail.com"><i class="fas fa-envelope" style="margin-right:8px;"></i>wahyunuralan@gmail.com</a>
+                    <a href="https://linkedin.com/in/nuralan" target="_blank"><i class="fab fa-linkedin" style="margin-right:8px;"></i>linkedin.com/in/nuralan</a>
+                    <a href="#"><i class="fas fa-map-marker-alt" style="margin-right:8px;"></i>Bojonegoro, Jawa Timur</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Wahyu Nur Alan. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="https://linkedin.com/in/nuralan" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:wahyunuralan@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- =================== JAVASCRIPT =================== -->
+    <script>
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 80) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
             }
-        </style>
-        <style>
-.task-list-item {
-    list-style-type: none;
-}
+        });
 
-.task-list-item-checkbox {
-    margin-left: -20px;
-    vertical-align: middle;
-    pointer-events: none;
-}
-</style>
-<style>
-:root {
-  --color-note: #0969da;
-  --color-tip: #1a7f37;
-  --color-warning: #9a6700;
-  --color-severe: #bc4c00;
-  --color-caution: #d1242f;
-  --color-important: #8250df;
-}
+        // Active link on scroll
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-menu a:not(.nav-cta)');
 
-</style>
-<style>
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-note: #2f81f7;
-    --color-tip: #3fb950;
-    --color-warning: #d29922;
-    --color-severe: #db6d28;
-    --color-caution: #f85149;
-    --color-important: #a371f7;
-  }
-}
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 120;
+                if (scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
 
-</style>
-<style>
-.markdown-alert {
-  padding: 0.5rem 1rem;
-  margin-bottom: 16px;
-  color: inherit;
-  border-left: .25em solid #888;
-}
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
 
-.markdown-alert>:first-child {
-  margin-top: 0
-}
+        // Reveal on scroll (Intersection Observer)
+        const revealElements = document.querySelectorAll('.reveal');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.15 });
 
-.markdown-alert>:last-child {
-  margin-bottom: 0
-}
+        revealElements.forEach(el => revealObserver.observe(el));
 
-.markdown-alert .markdown-alert-title {
-  display: flex;
-  font-weight: 500;
-  align-items: center;
-  line-height: 1
-}
-
-.markdown-alert .markdown-alert-title .octicon {
-  margin-right: 0.5rem;
-  display: inline-block;
-  overflow: visible !important;
-  vertical-align: text-bottom;
-  fill: currentColor;
-}
-
-.markdown-alert.markdown-alert-note {
-  border-left-color: var(--color-note);
-}
-
-.markdown-alert.markdown-alert-note .markdown-alert-title {
-  color: var(--color-note);
-}
-
-.markdown-alert.markdown-alert-important {
-  border-left-color: var(--color-important);
-}
-
-.markdown-alert.markdown-alert-important .markdown-alert-title {
-  color: var(--color-important);
-}
-
-.markdown-alert.markdown-alert-warning {
-  border-left-color: var(--color-warning);
-}
-
-.markdown-alert.markdown-alert-warning .markdown-alert-title {
-  color: var(--color-warning);
-}
-
-.markdown-alert.markdown-alert-tip {
-  border-left-color: var(--color-tip);
-}
-
-.markdown-alert.markdown-alert-tip .markdown-alert-title {
-  color: var(--color-tip);
-}
-
-.markdown-alert.markdown-alert-caution {
-  border-left-color: var(--color-caution);
-}
-
-.markdown-alert.markdown-alert-caution .markdown-alert-title {
-  color: var(--color-caution);
-}
-
-</style>
-        
-        </head>
-        <body class="vscode-body vscode-light">
-            <h1 id="wahyu-nur-alan"><strong>Wahyu Nur Alan</strong></h1>
-<p><a href="https://linkedin.com/in/nuralan">linkedin.com/in/nuralan</a> | <a href="mailto:wahyunuralan@gmail.com">wahyunuralan@gmail.com</a> | Bojonegoro, Jawa Timur, Indonesia</p>
-<hr>
-<h2 id="related-experience"><strong>RELATED EXPERIENCE</strong></h2>
-<h3 id="skyrain-studio"><strong>Skyrain Studio</strong></h3>
-<p><strong>Backend Developer</strong> <em>(2020 - Present)</em> – <em>Bojonegoro, Indonesia</em></p>
-<ul>
-<li>
-<p><strong><a href="http://Tepibojonegoro.com">Tepibojonegoro.com</a></strong> (2024 - Present)</p>
-<ul>
-<li>Developed backend using Golang (Fiber &amp; Echo)</li>
-<li>Implemented web scrapers for automated data collection</li>
-</ul>
-</li>
-<li>
-<p><strong>FINNET - Payment Gateway</strong> (Nov - Dec 2024)</p>
-<ul>
-<li>Built a secure transaction system using Golang Fiber</li>
-</ul>
-</li>
-<li>
-<p><strong>Pijar Sekolah</strong> <em>(2020 - Sep 2024)</em></p>
-<ul>
-<li>Leading backend development as a maintainer, managing a team of 4-7 developers</li>
-<li>Providing scalable and high-performance REST API (Node.js) for Pijar Sekolah, serving 150.000 CCU per minute</li>
-<li>Experienced in microservice architecture and event-driven architecture</li>
-<li>Utilizing Redis, Kafka, and MongoDB as core technology stack</li>
-<li>Handling exam feature, supporting 150k+ concurrent users during peak exam periods (PTS, PAS)</li>
-<li>Collaborating with third parties for feature integration and ensuring seamless data flow</li>
-<li>Coordinating with DevOps for system design guidance, load testing, bug fixing, and database tuning to optimize performance</li>
-</ul>
-</li>
-<li>
-<p><strong>Queue Management System</strong> <em>(2023)</em></p>
-<ul>
-<li>Developed real-time queue management system using Node.js</li>
-</ul>
-</li>
-<li>
-<p><strong>INTERMODA POC</strong> <em>(2020)</em></p>
-<ul>
-<li>Built backend for intermodal transportation POC using Node.js</li>
-</ul>
-</li>
-</ul>
-<h3 id="synergics-digital-solusindo"><strong>Synergics Digital Solusindo</strong></h3>
-<p><strong>Backend Developer</strong> <em>(2016 - 2020)</em> – <em>Jakarta, Indonesia</em></p>
-<ul>
-<li><strong>SI PUSLABFOR</strong> <em>(2017 - 2020)</em> – Laravel &amp; Vue.js</li>
-<li><strong>SAKTI</strong> <em>(2017 - 2020)</em> – Laravel</li>
-<li><strong>Crime Alarm System &amp; Police Monitoring</strong> <em>(2017 - 2020)</em> – PHP</li>
-</ul>
-<hr>
-<h2 id="education"><strong>EDUCATION</strong></h2>
-<p><strong>SMKN 1 Bojonegoro (Teknik Komputer dan Jaringan)</strong> 2013-2016</p>
-<hr>
-<h2 id="technical-skills"><strong>TECHNICAL SKILLS</strong></h2>
-<ul>
-<li><strong>Programming Languages:</strong> Golang, Node.js, PHP, JavaScript, SQL</li>
-<li><strong>Frameworks:</strong> Fiber, Echo, Restify, Express,  Laravel, CodeIgniter</li>
-<li><strong>Databases:</strong> MySQL, PostgreSQL, MongoDB</li>
-<li><strong>DevOps Tools:</strong> Docker, Kubernetes, GitHub Actions</li>
-<li><strong>Other Technologies:</strong> RESTful API, Web Scraping, Microservices, CI/CD, Nginx</li>
-</ul>
-
-            
-            
-        </body>
-        </html>
+        // Mobile nav toggle
+        function toggleNav() {
+            document.getElementById('navMenu').classList.toggle('open');
+        }
+    </script>
+</body>
+</html>
